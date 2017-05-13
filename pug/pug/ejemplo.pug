@@ -1,0 +1,27 @@
+//Imprime los Items pares
+ul
+	- for (var i = 1; i <= 100; i++)
+		if i%2 == 0
+				li Item #{i}
+
+//Imprime los Items multiples de 5 de 1 a 100
+ul
+	- for (var i = 1; i <= 100; i++)
+		if i%5 == 0
+				li Item #{i}
+
+//Imprime los Items multiples de 5 de 1 a 100
+ul
+	- for (var i = 1; i <= 100; i++)
+		if i%5 == 0
+				li.multiplo5 Item #{i}
+		else
+			li Item #{i}
+
+//Imprime los Items multiples de 5 de 1 a 100
+ul
+	- for (var i = 1; i <= 100; i++)
+		if i%5 == 0
+				li.multiplo5: strong Item #{i}
+		else
+			li Item #{i}
