@@ -1,0 +1,59 @@
+doctype
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		title Documento HTML5
+	body
+		h1 Atributos de Etiquetas
+		hr
+		// Atributos en linea
+		a(class="button", href="https://www.google.com.co", target="_blank") Google
+		| &nbsp; | &nbsp;
+
+		// Atributos en bloque o Multilinea
+		a(
+			class="button" 
+			href="https://www.google.com.co" 
+			target="_blank"
+		) Ir a Google
+		br
+		hr
+		br
+		// Atributos Booleanos
+		h1 Atributos Booleanos
+		input(type="checkbox" name="agreement" checked)
+		|
+		|
+		br
+		input(type="checkbox" checked)
+		|
+		|
+		br
+		input(type="checkbox" checked=true)
+		|
+		|
+		br
+		input(type="checkbox" checked=false)
+		|
+		|
+		br
+		label
+			input(type="radio" name="color" checked=false) 
+			| Amarillo
+		|
+		|
+		br
+		label
+			input(type="radio" name="color" checked=true) 
+			| Azul
+		|
+		|
+		br
+		label
+			input(type="radio" name="color" checked=false) 
+			| Rojo
+		
+
+		
+				
+		
