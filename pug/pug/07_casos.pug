@@ -1,0 +1,21 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Casos
+	body
+		h1 Casos
+		hr
+		ul
+			- var goles = 16
+			case goles
+				when 0
+					li  No tiene goles
+				when 1 
+				when 2
+					li Tiene 1-2 goles
+				when 3
+					li Tiene 3 goles
+				default
+					li Tiene mas de #{goles} goles en contra
+		 

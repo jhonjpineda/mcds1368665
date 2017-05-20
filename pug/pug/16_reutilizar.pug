@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Reutilizar Código
+	body
+		h1 Reutilizar Código
+		mixin frutas(fruta)
+			li.fruta=fruta
+
+		ol
+			+frutas('Papaya')
+			+frutas('Piña')
+			+frutas('Guayaba')
+			+frutas('Sandia')
