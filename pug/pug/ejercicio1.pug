@@ -1,0 +1,117 @@
+doctype
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		title Ejercicio1
+		style.
+
+			table{
+				width: 500px;
+				height: 500px;
+			}
+
+			table, tr, td{
+				border-collapse: collapse;
+				border: 1px solid black;
+
+			}
+			td{
+				background-color: #e2e2e2;
+			}
+			.white{
+				background-color: #fff;
+			}
+	body
+		h1 Ejercicio1
+		hr
+
+		table
+			-for  ( var i =1; i<= 10; i++)
+				tr 				
+					case i
+						when 1
+							td
+							td(colspan=9 class='white')
+							td(rowspan=10 )
+							td(rowspan=10 )
+						when 2 
+							td
+							td
+							td(colspan=8 class='white')
+						when 3
+							td
+							td
+							td
+							td(colspan=7 class='white')
+						when 4
+							td
+							td
+							td
+							td
+							td(colspan=6 class='white')
+						when 5
+							td
+							td
+							td
+							td
+							td
+							td(colspan=5 class='white')
+						when 6
+							td
+							td
+							td
+							td
+							td
+							td
+							td(colspan=4 class='white')
+						when 7
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td(colspan=3 class='white')
+						when 8
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td(colspan=2 class='white')
+						when 9
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td(colspan=1 class='white')
+						when 10
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+							td
+						
+
+
+
+						
+						
+
+
+
+							

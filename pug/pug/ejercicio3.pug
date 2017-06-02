@@ -1,0 +1,71 @@
+mixin meta(nam, conten)
+	meta(name=nam content=conten)
+mixin link(name)
+	link(href=name rel='stylesheet' type='text/css')
+mixin uno(link, img, header)
+	.col-md-4
+		.preview-pane
+			a(href=link )
+				img.img-fluid.mx-auto.mb-4(src=img alt='')
+				h3=header
+				hr.colored
+				p.text-muted Ideal For:
+				if block
+					block
+
+mixin dos(li1, li2, li3)
+	ul.list-unstyled.text-muted
+		li
+			em=li1
+		li
+			em=li2
+		li
+			em=li3	
+		
+doctype
+//- empieza el codigo
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		+meta('viewport', 'width=device-width, initial-scale=1.0, user-scalable=no')
+		+meta('description', '')
+		+meta('author', '')
+		title Vitality
+		+link('css/bootstrap.css')
+		+link('css/font-awesome.css')
+		+link('css/vitality-red.css')
+	body
+		h1 Ejercicio3
+		hr
+		.demo-header
+			.demo-header-content
+				.container
+					h1 Welcome to Vitality!
+					hr.colored
+					p All of the sample layouts are included with your download. Select an example layout below to preview!
+					ul.list-inline.cta-list
+						li.list-inline-item
+							a.btn.btn-primary.page-scroll-demo(href="#previews") View Demos
+						li.list-inline-item
+							a.btn.btn-primary.page-scroll-demo(href="docs/index.html") Documentation
+                           
+		.container#previews
+			.row
+				+uno('agency.html', 'img/demo/screenshot1.png', 'Agency')
+					+dos('Agencies', 'Businesses', 'Consultants')
+				+uno('creative.html','img/demo/screenshot2.png', 'Creative')
+					+dos('Personal Portfolios', 'Freelancers', 'Photographers')
+				+uno('culinary.html', 'img/demo/screenshot3.png', 'Culinary')
+					+dos('Restaurants', 'Bakeries', 'Caterers' )
+				+uno('fashion.html', 'img/demo/screenshot4.png', 'Fashion')
+					+dos('Boutiques', 'Designers', 'Retail Stores' )
+				+uno('legal.html', 'img/demo/screenshot7.png', 'Legal')
+					+dos('Lawyers', 'Law Firms', 'Consultants' )
+				+uno('video.html', 'img/demo/screenshot6.png', 'Video')
+					em An example of the agency theme with a video background for the header. A video background can be applied to any other theme!
+
+		// Core Scripts
+		script(src="js/jquery.js")
+		script(src="js/bootstrap.js")
+		// Vitality Theme Scripts
+		script(src="js/vitality.js")
