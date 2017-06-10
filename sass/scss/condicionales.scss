@@ -1,0 +1,29 @@
+body{
+	background-color: #ddd;
+	color: #333;
+	font: 14pt Arial;
+}
+
+$edad: 17;
+
+
+article{
+	background-color: #fff;
+	border: 2px solid #ccc;
+	width: 400px;
+	padding: 20px;
+	h2{
+		@if $edad >= 18{
+			color: #0c0;
+			&.no-votar{
+				display:none;
+			}
+		}		
+		@else{			
+			color: #c00;
+			&.votar{
+				display:none;
+			}
+		}
+	}
+}

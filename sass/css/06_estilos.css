@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+:root {
+  background: -webkit-linear-gradient(top, #3e73ba, #fff);
+  height: 100vh; }
+
+button {
+  border: none;
+  -webkit-box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.8), 4px 4px 12px rgba(0, 0, 0, 0.8);
+  box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.8), 4px 4px 12px rgba(0, 0, 0, 0.8);
+  background: -webkit-linear-gradient(left, #af3e37, #a46025);
+  color: #fff;
+  font-size: 2em;
+  font-family: "Acme";
+  display: block;
+  margin: 80px auto;
+  width: 400px;
+  padding: 40px; }
+  button:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #a46025, #af3e37); }
